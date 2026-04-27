@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@keyframes fadeOut {
+    from { opacity: 1;}
+    to { opacity: 0;}
+}
+
+@keyframes fadeIn {
+    from { opacity: 0;}
+    to { opacity: 1;}
+}
+
+@keyframes paddingHTP15 {
+    from { padding-bottom: 0;}
+    to { padding-bottom: 15px;}
+}
+
+@keyframes paddingHTP0 {
+    from { padding-bottom: 15px;}
+    to { padding-bottom: 0;}
+}
+
+
+body, html {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    height: 100% !important;
+}
+
+.container {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 45%;
+    left: 50%;
+    text-align: center;
+}
+
+.game-canvas {
+    border: 2px solid rgb(61, 61, 61);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
+    margin-top: 15px;
+}
+
+.gameover-screen {
+    position: absolute;
+    display: flex;
+    width: 380px;
+    height: 380px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background: rgb(241, 241, 241, 0.5);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.score #score {
+    font-size: 5vh;
+}
+
+.score-multiplayer {
+    color: rgb(61, 61, 61);
+    font-size: 1.5vh;
+}
+
+.highscore {
+    background: rgb(137, 39, 39, 0.9);
+    color: white;
+    padding: 2px;
+    border-radius: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.gamemode-button {
+    font-family: "Poppins", sans-serif;
+    width: 32.3%;
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgb(241, 241, 241);
+    border: 1px solid rgb(203, 203, 203);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
+    transition: 0.5s;
+}
+
+.gamemode-button:hover {
+    background: rgba(144, 73, 73, 0.9);
+    color: white;
+    border: 1px solid rgb(107, 26, 26);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.gamemode-button:focus {
+    outline: 2px solid rgb(157, 157, 157);
+}
+
+.active {
+    background: rgb(137, 39, 39, 0.9); 
+    color: white; 
+    border: 1px solid rgb(157, 40, 40);
+}
+
+.start-button {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgb(137, 39, 39, 0.9);
+    color: white;
+    border: 1px solid rgb(157, 40, 40);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
+    transition: 0.5s;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.start-button:hover {
+    background: rgba(95, 25, 25, 0.9);
+    border: 1px solid rgb(107, 26, 26);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.start-button:focus {
+    outline: 2px solid rgb(157, 157, 157);
+}
+
+.start-small {
+    background: rgb(137, 39, 39, 0.9);
+    color: white;
+    padding: 2px;
+    border-radius: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.howtoplay {
+    position: absolute;
+    transform: translate(0%,-50%);
+    top: 50%;
+    right: 1%;
+    width: 10%;
+    border: 1px solid rgb(203, 203, 203);
+    background: rgb(241, 241, 241);
+    border-radius: 5px;
+    text-align: left;
+    padding: 15px;
+    padding-bottom: 0;
+    font-size: 13px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
+}
+
+.howtoplay h4 {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.howtoplay-text {
+    margin-left: 5px;
+    margin-bottom: 2px;
+}
+
+.key {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 2px;
+    border: 1px solid rgb(214, 214, 214);
+}
+
+.food-key {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(60, 137, 36);
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    border: 1px solid rgb(42, 103, 24);
+}
+
+.wall-key {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    border: 1px solid rgb(20, 20, 20);
+}
+
+#howtoplay-walls {
+    opacity: 0;
+}
