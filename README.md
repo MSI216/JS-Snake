@@ -7,4 +7,4 @@ Simple Snake game built with vanilla JavaScript featuring keyboard controls, a s
 
 # Try it out
 
-Try it out at: 
+Try it out at: https://msi216.github.io/JS-Snake/
