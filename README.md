@@ -3,7 +3,7 @@ Simple Snake game built with vanilla JavaScript featuring keyboard controls, a s
 
 # Preview
 
-![Snake game preview image](https://i.imgur.com/x1jcClG.png)
+![Snake game preview image](https://i.imgur.com/0XotUZl.png)
 
 # Try it out
 
